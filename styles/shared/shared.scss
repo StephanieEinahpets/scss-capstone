@@ -1,5 +1,5 @@
 $primary-color: #cc2d78;
-$button-color: #ed1861;
+$button-color: #e61f65;
 $footer-color: #323438;
 $text-color: #3c4858;
 $light-text: #9ba3ac;
@@ -25,7 +25,7 @@ body {
   transition: background 0.3s, box-shadow 0.3s;
 
   .nav-container {
-    padding: 0.35rem 0.5rem;
+    padding: 0.5rem 0.5rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -51,9 +51,23 @@ body {
         a {
           padding: 0.4rem 0.75rem;
           font-weight: lighter;
-          transition: color 0.3s, background-color 0.3s;
+          transition: color 0.3s, background-color 5s;
           border-radius: 2px;
           font-size: 0.73rem;
+        }
+      }
+
+      li.more a {
+        background-color: $button-color;
+        color: $white;
+        padding: 1.2rem 1.7rem;
+        border-radius: 30px;
+
+        &:hover,
+        &:focus {
+          background-color: $button-color;
+          color: rgb(222, 163, 183);
+          box-shadow: 0 5px 10px rgba(255, 0, 102, 0.5);
         }
       }
     }
@@ -107,7 +121,7 @@ body.home .main-header {
       }
     }
 
-    .nav-links li a {
+    .nav-links li:not(.more) a {
       color: white;
       padding: 0.4rem 0.75rem;
       border-radius: 2px;
@@ -117,8 +131,8 @@ body.home .main-header {
       &:focus {
         background-color: rgba(134, 134, 134, 0.3);
         text-decoration: none;
-        padding: 1.2rem 0.8rem;
-        transition: ease-out;
+        padding: 1.2rem 0.9rem;
+        transition: ease-in-out;
       }
     }
   }
