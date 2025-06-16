@@ -1,0 +1,125 @@
+$primary-color: #cc2d78;
+$button-color: #ed1861;
+$footer-color: #323438;
+$text-color: #3c4858;
+$light-text: #9ba3ac;
+$light-grey: #d7d7d7;
+$white: #fff;
+$font-family: "Montserrat", sans-serif;
+$spacing: 1.5rem;
+
+body {
+  font-family: $font-family;
+  margin: 0;
+  background-color: $white;
+  color: $text-color;
+  line-height: 1.6;
+
+  a {
+    text-decoration: none;
+  }
+}
+
+.main-header {
+  width: 100%;
+  transition: background 0.3s, box-shadow 0.3s;
+
+  .nav-container {
+    padding: 0.35rem 0.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .logo a {
+      font-size: 1.1rem;
+      font-weight: lighter;
+      text-decoration: none;
+      padding-left: 11vw;
+    }
+
+    .nav-links {
+      display: flex;
+      list-style: none;
+      gap: 0.6rem;
+      padding-left: 0;
+      padding-right: 11vw;
+
+      li {
+        margin: 0;
+        padding: 0;
+
+        a {
+          padding: 0.4rem 0.75rem;
+          font-weight: lighter;
+          transition: color 0.3s, background-color 0.3s;
+          border-radius: 2px;
+          font-size: 0.73rem;
+        }
+      }
+    }
+  }
+}
+
+body:not(.home) .main-header {
+  position: sticky;
+  top: 0;
+  background: $white;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+
+  .nav-container {
+    .logo a,
+    .nav-links li a {
+      color: $text-color;
+
+      &:hover,
+      &:focus {
+        color: $primary-color;
+      }
+    }
+  }
+}
+
+body.home .main-header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+  background: transparent;
+  box-shadow: none;
+  margin: 0;
+  padding: 0;
+
+  .nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    height: auto;
+
+    .logo a {
+      color: $white;
+
+      &:hover,
+      &:focus {
+        color: #e6e6e6;
+        text-decoration: none;
+      }
+    }
+
+    .nav-links li a {
+      color: white;
+      padding: 0.4rem 0.75rem;
+      border-radius: 2px;
+      transition: background-color 0.3s;
+
+      &:hover,
+      &:focus {
+        background-color: rgba(134, 134, 134, 0.3);
+        text-decoration: none;
+        padding: 1.2rem 0.8rem;
+        transition: ease-out;
+      }
+    }
+  }
+}
