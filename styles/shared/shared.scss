@@ -34,7 +34,7 @@ body {
       font-size: 1.1rem;
       font-weight: lighter;
       text-decoration: none;
-      padding-left: 11vw;
+      padding-left: 1.5vw;
     }
 
     .nav-links {
@@ -42,7 +42,7 @@ body {
       list-style: none;
       gap: 0.6rem;
       padding-left: 0;
-      padding-right: 11vw;
+      padding-right: 1.5vw;
 
       li {
         margin: 0;
@@ -59,15 +59,15 @@ body {
 
       li.more a {
         background-color: $button-color;
-        color: $white;
+        color: $white !important;
         padding: 1.2rem 1.7rem;
         border-radius: 30px;
 
         &:hover,
         &:focus {
           background-color: $button-color;
-          color: rgb(222, 163, 183);
-          box-shadow: 0 5px 10px rgba(255, 0, 102, 0.5);
+          color: rgb(251, 228, 235, 0.5) !important;
+          box-shadow: 0 10px 10px rgba(255, 0, 102, 0.5);
         }
       }
     }
@@ -129,11 +129,40 @@ body.home .main-header {
 
       &:hover,
       &:focus {
-        background-color: rgba(134, 134, 134, 0.3);
+        background-color: rgba(206, 204, 204, 0.3);
         text-decoration: none;
         padding: 1.2rem 0.9rem;
         transition: ease-in-out;
       }
     }
+  }
+}
+
+.main-footer {
+  background: $footer-color;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem;
+
+  > div:first-child {
+    font-weight: lighter;
+    display: flex;
+    gap: 2rem;
+    font-size: 0.7rem;
+    padding-top: 0.5rem;
+  }
+
+  a {
+    color: white;
+    text-decoration: none;
+    &:hover {
+      color: darken($white, 20%);
+    }
+  }
+
+  > div:last-child {
+    font-size: smaller;
+    font-weight: lighter;
   }
 }
