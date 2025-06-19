@@ -1,0 +1,44 @@
+$primary-color: #d52f77;
+$button-color: #ed1861;
+$footer-color: #323438;
+$text-color: #3c4858;
+$light-grey: #9ba3ac;
+$lighter-grey: #d7d7d7;
+$white: #fff;
+$font-family: "Montserrat", sans-serif;
+$spacing: 1.5rem;
+
+body.parent {
+  background-color: $lighter-grey;
+  font-family: $font-family;
+
+  .parent-hero {
+    background: linear-gradient(to right, #b12181, #df3372);
+    height: 50vh;
+    color: $white;
+    display: flex;
+    justify-content: center;
+
+    h1 {
+      font-size: 2.7rem;
+      margin-top: 8%;
+    }
+  }
+  .parent-content {
+    width: 95%;
+    margin: -4rem auto 0 auto;
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    box-shadow: -8px 0 20px rgba(0, 0, 0, 0.1), 8px 0 20px rgba(0, 0, 0, 0.1),
+      0 -8px 15px rgba(0, 0, 0, 0.08);
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+
+    .content-wrapper {
+      padding-top: 5rem;
+      padding-left: 13rem;
+      padding-right: 15rem;
+    }
+  }
+}
