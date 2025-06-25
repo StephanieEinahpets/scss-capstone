@@ -21,9 +21,6 @@ body {
 }
 
 .main-header {
-  width: 100%;
-  transition: background 0.3s, box-shadow 0.3s;
-
   .nav-container {
     padding: 0.3rem 0.5rem;
     display: flex;
@@ -89,6 +86,9 @@ body:not(.home) .main-header {
       &:focus {
         color: $primary-color;
       }
+    }
+    .nav-links a.hilighted {
+      color: $primary-color;
     }
   }
 }
