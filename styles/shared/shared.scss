@@ -31,7 +31,7 @@ body {
       font-size: 1.1rem;
       font-weight: lighter;
       text-decoration: none;
-      padding-left: 11.5vw;
+      padding-left: 11vw;
     }
 
     .nav-links {
@@ -39,7 +39,7 @@ body {
       list-style: none;
       gap: 0.6rem;
       padding-left: 0;
-      padding-right: 11.5vw;
+      padding-right: 11vw;
 
       li {
         margin: 0;
@@ -105,9 +105,6 @@ body.home .main-header {
   padding: 0;
 
   .nav-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     padding: 1rem 2rem;
     height: auto;
 
@@ -172,5 +169,101 @@ body.home .main-header {
     &:hover {
       color: darken($white, 20%);
     }
+  }
+}
+
+//media queries
+@media (max-width: 768px) {
+  .hero-container,
+  .elements-hero,
+  .blog-hero,
+  .parent-hero {
+    height: 320px !important;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    text-align: center;
+    flex-direction: column;
+    padding: 0 !important;
+    margin: 0 !important;
+
+    h1 {
+      font-size: 1.5rem !important;
+      margin: 0 !important;
+      line-height: 1.2;
+    }
+  }
+
+  .elements-hero h3,
+  .blog-hero h3,
+  .parent-hero h3 {
+    margin-top: 0.5rem;
+    font-size: 1rem;
+    color: #fcd3ec;
+  }
+
+  .elements-content .content-wrapper,
+  .parent-content .content-wrapper {
+    padding-left: 2rem !important;
+    padding-right: 2rem !important;
+  }
+
+  .elements-content,
+  .home-content,
+  .blog-content,
+  .parent-content {
+    width: 95%;
+    margin: -2rem auto 0;
+    padding: 2rem !important;
+  }
+
+  body.contact .contact-container {
+    display: flex;
+    flex-direction: column;
+    padding: 0 2rem;
+  }
+
+  body.contact .form-wrapper,
+  body.contact .contact-info {
+    width: 100%;
+    margin: 0;
+    padding: 1rem 0;
+  }
+
+  body.contact .contact-form textarea,
+  body.contact .contact-form input[type="text"] {
+    width: 100%;
+  }
+
+  .contact-container h1 {
+    font-size: 1.8rem;
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+
+  .values-container .cards-grid,
+  .blog-posts {
+    grid-template-columns: 1fr !important;
+    gap: 1.5rem !important;
+  }
+
+  .card,
+  .post {
+    padding: 1.5rem !important;
+  }
+
+  .post h5 {
+    font-size: 0.75rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .post h4 {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .post p {
+    font-size: 0.9rem;
+    line-height: 1.4;
   }
 }

@@ -5,8 +5,20 @@ $text-color: #5c6068;
 $light-grey: #9ba3ac;
 $lighter-grey: #d9d9d9;
 $white: #fff;
-$font-family: "Montserrat", sans-serif;
+$font-family: sans-serif;
 $hr-color: #efefef;
+
+@mixin shadowed-container {
+  width: 95%;
+  margin: -4rem auto 0 auto;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  box-shadow: -8px 0 20px rgba(0, 0, 0, 0.1), 8px 0 20px rgba(0, 0, 0, 0.1),
+    0 -8px 15px rgba(0, 0, 0, 0.08);
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+}
 
 body.elements {
   background-color: $lighter-grey;
@@ -58,15 +70,7 @@ body.elements {
   }
 
   .elements-content {
-    width: 95%;
-    margin: -4rem auto 0 auto;
-    background: #fff;
-    display: flex;
-    flex-direction: column;
-    box-shadow: -8px 0 20px rgba(0, 0, 0, 0.1), 8px 0 20px rgba(0, 0, 0, 0.1),
-      0 -8px 15px rgba(0, 0, 0, 0.08);
-    border-top-left-radius: 6px;
-    border-top-right-radius: 6px;
+    @include shadowed-container;
 
     .content-wrapper {
       padding-top: 5.5rem;
