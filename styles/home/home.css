@@ -1,0 +1,210 @@
+body.home {
+  background-color: #d7d7d7;
+}
+body.home .hero-container {
+  height: 82vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.4)), url("../../assets/clouds-bg.jpg");
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  position: relative;
+  overflow: hidden;
+}
+body.home .hero-container .statue {
+  position: absolute;
+  margin-top: 7%;
+  left: 50%;
+  height: 130%;
+  transform: translateX(-50%);
+  z-index: 0;
+  opacity: 0.9;
+  filter: brightness(45%);
+}
+body.home .hero-container h1 {
+  font-size: 3.5rem;
+  color: #fff;
+  margin: 4rem 0 1rem;
+}
+body.home .hero-container h1,
+body.home .hero-container p,
+body.home .hero-container .btn {
+  z-index: 1;
+  position: relative;
+}
+body.home .hero-container p {
+  font-size: 1.25rem;
+  color: #fff;
+  margin: 0 0 2rem;
+  max-width: 600px;
+  font-weight: light;
+}
+body.home .hero-container .btn {
+  background-color: #ed1861;
+  color: #fff;
+  padding: 0.9rem 2.2rem;
+  border-radius: 3px;
+  transition: background-color 0.3s;
+  font-weight: lighter;
+  font-size: 0.73rem;
+  margin-top: 1.2rem;
+}
+body.home .hero-container .btn:hover, body.home .hero-container .btn:focus {
+  background-color: #c30f4d;
+}
+body.home .home-content {
+  position: relative;
+  z-index: 2;
+  width: 95%;
+  margin: -4rem auto 0 auto;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  box-shadow: -8px 0 20px rgba(0, 0, 0, 0.1), 8px 0 20px rgba(0, 0, 0, 0.1), 0 -8px 15px rgba(0, 0, 0, 0.08);
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+body.home .home-content .values-container {
+  padding: 0 2rem;
+  text-align: center;
+  padding-bottom: 15vh;
+}
+body.home .home-content .values-container h2 {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+}
+body.home .home-content .values-container .cards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+}
+body.home .home-content .values-container .cards-grid .card {
+  padding: 2rem;
+}
+body.home .home-content .values-container .cards-grid .card h3 {
+  margin-bottom: 1rem;
+  color: #3c4858;
+  font-weight: light;
+  text-align: center;
+}
+body.home .home-content .values-container .cards-grid .card p {
+  color: #3c4858;
+  font-weight: lighter;
+  text-align: center;
+}
+body.home .home-content .about-container {
+  padding: 4rem 2rem;
+  text-align: center;
+  height: 35vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.5)), url(../../assets/mountains.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  display: flex;
+  color: #fff;
+  gap: 10rem;
+  justify-content: center;
+  align-items: center;
+}
+body.home .home-content .about-container h2 {
+  font-size: 2.25rem;
+  text-align: left;
+}
+body.home .home-content .about-container p {
+  max-width: 600px;
+  margin: 0 auto;
+  line-height: 1.9;
+  text-align: left;
+  font-size: large;
+}
+body.home .home-content .about-container .about-img {
+  max-width: 40%;
+}
+body.home .home-content .about-container .about-img img {
+  max-width: 100%;
+}
+body.home .home-content .blog-container {
+  padding: 4rem 4rem;
+}
+body.home .home-content .blog-container h2 {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+body.home .home-content .blog-container .blog-posts {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+}
+body.home .home-content .blog-container .blog-posts .post {
+  padding: 2rem;
+}
+body.home .home-content .blog-container .blog-posts .post h5 {
+  margin-bottom: 1rem;
+  font-weight: lighter;
+  text-align: left;
+}
+body.home .home-content .blog-container .blog-posts .post h5.thousand-label {
+  color: #9b59b6;
+}
+body.home .home-content .blog-container .blog-posts .post h5.elements-label {
+  color: #2980b9;
+}
+body.home .home-content .blog-container .blog-posts .post h5.tags-label {
+  color: #cc2d78;
+}
+body.home .home-content .blog-container .blog-posts .post h4 {
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  color: #3c4858;
+}
+body.home .home-content .blog-container .blog-posts .post p {
+  color: rgb(161, 161, 161);
+  line-height: 1.6;
+  font-size: small;
+}
+body.home .home-content .blog-container .blog-posts .post p a {
+  color: rgb(68, 68, 125);
+}
+body.home .home-content .blog-container .blog-posts .post p a:hover, body.home .home-content .blog-container .blog-posts .post p a:focus {
+  color: #cc2d78;
+}
+body.home .home-content .contact-container {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.5)), url(../../assets/mountains.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #fff;
+  padding: 4rem 2rem;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  height: 40vh;
+}
+body.home .home-content .contact-container h2 {
+  font-size: 2rem;
+  font-weight: bold;
+}
+body.home .home-content .contact-container .contact-info .contact-item {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 0.5rem;
+}
+body.home .home-content .contact-container .contact-info .contact-item i {
+  font-size: 2.5rem;
+  color: #fff;
+}
+body.home .home-content .contact-container .contact-info .contact-item h6 {
+  margin: 0;
+  font-size: 1.15rem;
+  font-weight: bold;
+}
+body.home .home-content .contact-container .contact-info p {
+  margin: 0 0 2rem 2.5rem;
+  color: #fff;
+  font-weight: lighter;
+  font-family: "Montserrat", sans-serif;
+}/*# sourceMappingURL=home.css.map */
